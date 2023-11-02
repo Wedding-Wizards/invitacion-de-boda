@@ -38,7 +38,7 @@ function App() {
           <h2>07.06.1743</h2>
         </section>
         <section>
-          <a href="https://maps.app.goo.gl/jUXnbtMkMD7exVN48" target="_blank">
+          <a href="https://maps.app.goo.gl/jUXnbtMkMD7exVN48" target="_blank" >
             <img src={church} alt="" />
             <p>Ceremonia</p>
             <p>Glencorse Old Kirk</p>
@@ -68,7 +68,39 @@ function App() {
           </a>
           <button onClick={handleAddToCalendar}>Agregar a calendario</button>
         </section>
-        <section></section>
+        <section>
+          <h2>Compartiendo este día junto a tí</h2>
+          <p>Como seguro que todos hacéis muchas fotos y no queremos perdérnoslas. Hemos creado un album compartido en Wedshoots</p>
+          <ol>
+            <li>Descarga la App de Wedshoots: <a href="#">www.wedshoots.com</a></li>
+            <li>Accede como invitado al albun de la boda con el código: <a href="#">AB158Y</a> </li>
+            <li>Sube todas las fotos que quieras, antes, durante y después de la boda.</li>
+          </ol> 
+          <p>¿No quieres descargarte wedshoots?, podrás utilizar el #jamie&claire</p>
+        </section>
+        <section>
+            <div>
+              <img src="" alt="" />
+            </div>
+          <form action="">
+            <h2>¿Asistes a la ceremonia?</h2>
+            <input type="radio" name="" id="" required/>
+            <label htmlFor="">Sí, confirmo.</label>
+            <input type="radio" name="" id="" required/>
+            <label htmlFor="">No puedo :(</label>
+            <fieldset>
+            <input type="text" name="" id="" placeholder='Dime tu nombre completo' required/>
+            <textarea type="text" placeholder='Indicanos algún dato importante (alergias...)' required></textarea>
+            </fieldset>
+            <button>Enviar</button>
+          </form>
+        </section>
+        <section>
+          <h2>Regalos</h2>
+          <p>Si deseáis regalarnos algo más que vuestra hermosa presencia...</p>
+          <i>Icono de regalo</i>
+          <button>Número de IBAN</button>
+        </section>
       </main>
     </>
   );
