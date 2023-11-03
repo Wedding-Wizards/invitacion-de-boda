@@ -1,20 +1,16 @@
 //imports dependencias, imagenes, componentes, stylos
-import outlander from '../images/outlander.jpg';
+import outlander from '../images/prueba-pareja.jpg';
 import church from '../images/iglesia.jpg';
 import leoch from '../images/leoch.png';
 //import ls from '../services/localStorage';
 //import callToApi from '../services/api';
 import '../styles/App.scss';
-import {format} from 'date-fns';
+import { format } from 'date-fns';
 //import { useState, useEffect } from "react";
 
 function App() {
-  //funciones, variables, handles,
-  /*useEffect(() => {
-    callToApi().then((dataApi) => {
-      setLoquesea(dataApi);
-    });
-  }, []);*/
+  /*****Para google calendar****/
+
   const startDate = format(new Date(1743, 5, 7), "yyyyMMdd'T'HHmmss'Z'");
   const endDate = format(new Date(1743, 5, 7), "yyyyMMdd'T'HHmmss'Z'");
 
@@ -31,14 +27,24 @@ function App() {
   //html
   return (
     <>
-      <main>
-        <section>
-          <img src={outlander} alt="" />
-          <h1>Jamie Alexander Fraser & Claire Beauchamp </h1>
-          <h2>07.06.1743</h2>
+      <main className="main">
+        <section className="section-principal">
+          <div className="section-principal__img"></div>
+          <div className="section-principal__couple">
+            <p className="section-principal__couple--name">
+              Jamie Alexander Fraser
+            </p>
+            <p className="section-principal__co06.1743uple--and">&</p>
+            <p className="section-principal__couple--name">Claire Beauchamp</p>
+            <p className="section-principal__date">07.06.1743</p>
+          </div>
+          {/* <h1 className="section-principal__couple">
+            Jamie Alexander Fraser & Claire Beauchamp{' '}
+          </h1> */}
+          {/* <h2 className="section-principal__date">07.06.1743</h2> */}
         </section>
         <section>
-          <a href="https://maps.app.goo.gl/jUXnbtMkMD7exVN48" target="_blank" >
+          <a href="https://maps.app.goo.gl/jUXnbtMkMD7exVN48" target="_blank">
             <img src={church} alt="" />
             <p>Ceremonia</p>
             <p>Glencorse Old Kirk</p>
@@ -70,27 +76,50 @@ function App() {
         </section>
         <section>
           <h2>Compartiendo este día junto a tí</h2>
-          <p>Como seguro que todos hacéis muchas fotos y no queremos perdérnoslas. Hemos creado un album compartido en Wedshoots</p>
+          <p>
+            Como seguro que todos hacéis muchas fotos y no queremos
+            perdérnoslas. Hemos creado un album compartido en Wedshoots
+          </p>
           <ol>
-            <li>Descarga la App de Wedshoots: <a href="#">www.wedshoots.com</a></li>
-            <li>Accede como invitado al albun de la boda con el código: <a href="#">AB158Y</a> </li>
-            <li>Sube todas las fotos que quieras, antes, durante y después de la boda.</li>
-          </ol> 
-          <p>¿No quieres descargarte wedshoots?, podrás utilizar el #jamie&claire</p>
+            <li>
+              Descarga la App de Wedshoots: <a href="#">www.wedshoots.com</a>
+            </li>
+            <li>
+              Accede como invitado al albun de la boda con el código:{' '}
+              <a href="#">AB158Y</a>{' '}
+            </li>
+            <li>
+              Sube todas las fotos que quieras, antes, durante y después de la
+              boda.
+            </li>
+          </ol>
+          <p>
+            ¿No quieres descargarte wedshoots?, podrás utilizar el #jamie&claire
+          </p>
         </section>
         <section>
-            <div>
-              <img src="" alt="" />
-            </div>
+          <div>
+            <img src="" alt="" />
+          </div>
           <form action="">
             <h2>¿Asistes a la ceremonia?</h2>
-            <input type="radio" name="" id="" required/>
+            <input type="radio" name="" id="" required />
             <label htmlFor="">Sí, confirmo.</label>
-            <input type="radio" name="" id="" required/>
+            <input type="radio" name="" id="" required />
             <label htmlFor="">No puedo :(</label>
             <fieldset>
-            <input type="text" name="" id="" placeholder='Dime tu nombre completo' required/>
-            <textarea type="text" placeholder='Indicanos algún dato importante (alergias...)' required></textarea>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Dime tu nombre completo"
+                required
+              />
+              <textarea
+                type="text"
+                placeholder="Indicanos algún dato importante (alergias...)"
+                required
+              ></textarea>
             </fieldset>
             <button>Enviar</button>
           </form>
