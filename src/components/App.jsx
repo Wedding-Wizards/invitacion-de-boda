@@ -32,16 +32,17 @@ function App() {
           <div className="section-principal__img"></div>
           <div className="section-principal__couple">
             <p className="section-principal__couple--name">
-              Jamie Alexander Fraser
+              Jamie
             </p>
-            <p className="section-principal__co06.1743uple--and">&</p>
-            <p className="section-principal__couple--name">Claire Beauchamp</p>
+            <p className="section-principal__couple--and">&</p>
+            <p className="section-principal__couple--name">Claire</p>
             <p className="section-principal__date">07.06.1743</p>
           </div>
+          
           {/* <h1 className="section-principal__couple">
-            Jamie Alexander Fraser & Claire Beauchamp{' '}
-          </h1> */}
-          {/* <h2 className="section-principal__date">07.06.1743</h2> */}
+            Jamie & Claire
+          </h1>
+          <h2 className="section-principal__date">07.06.1743</h2> */}
         </section>
         <section>
           <a href="https://maps.app.goo.gl/jUXnbtMkMD7exVN48" target="_blank">
@@ -59,7 +60,7 @@ function App() {
             ></iframe>
           </a>
           <a href="https://maps.app.goo.gl/UNmd2EcyWEU4KLT68" target="_blank">
-            <img src={leoch} alt="" />
+            <img src={leoch} alt="" className='celebration__img'/>
             <p>Celebración</p>
             <p>Castillo de Doune</p>
             <p>20:00</p>
