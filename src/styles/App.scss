@@ -8,7 +8,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  
+
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -20,7 +20,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    
+
     @media (min-width: 768px) {
       width: 100%;
       height: 100%;
@@ -42,17 +42,16 @@
     align-items: center;
     text-align: center;
     padding: 1.5rem;
-   
+
     @media (min-width: 768px) {
       font-size: 5.5rem;
       padding-right: 10rem;
-      
     }
     @media (min-width: 1024px) {
       width: 50%;
     }
-    
-    &--name{
+
+    &--name {
       font-size: 7.5rem;
       @media (min-width: 768px) {
         font-size: 8rem;
@@ -71,8 +70,135 @@
   }
 }
 
-.celebration{
-  &__img{
-    width: 40rem;
+.section-places {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+  &__btn {
+    border: none;
+    padding: 1.3rem;
+    border-radius: 5rem;
+    margin: 2rem;
+    font-family: roboto;
+    background-color: #d6a19342;
+    color: #d6a193fa;
+    transition-duration: 0.8s;
+    &:hover {
+      color: rgba(255, 255, 255, 0.664);
+      background-color: #d6a193fa;
+      box-shadow: 0 1px 10px 0 grey, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+.ceremony {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #d6a19342;
+  margin-bottom: 3rem;
+  &__img {
+    width: 25rem;
+    padding-bottom: 1rem;
+  }
+  &__title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__church {
+    color: #d6a193fa;
+    font-family: roboto;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__time {
+    color: #d6a193fa;
+    font-family: roboto;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__map {
+    width: 25rem;
+  }
+}
+
+.celebration {
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: #d6a19342;
+  align-items: center;
+  text-align: center;
+  &__img {
+    width: 25rem;
+    padding-bottom: 1rem;
+  }
+  &__title {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__castle {
+    color: #d6a193fa;
+    font-family: roboto;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__time {
+    color: #d6a193fa;
+    font-family: roboto;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  &__map {
+    border-radius: rem;
+    width: 25rem;
+  }
+}
+.photos {
+  padding: 1.5rem;
+  &__title {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  &__wedshoots {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #d6a19342;
+    &--p {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  }
+  &__ig{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #d6a19342;
+    text-align: center;
+    &--icon{
+      padding-bottom: 1rem;
+      color: #d6a193fa;
+      font-size: 2rem;
+    }
   }
 }
