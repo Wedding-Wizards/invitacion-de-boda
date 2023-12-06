@@ -171,6 +171,7 @@
     padding: 1.5rem;
   }
   &__subtitle {
+    font-family: 'Asap', sans-serif;
     font-size: 1.5rem;
     text-align: center;
     padding: 1.5rem;
@@ -181,12 +182,14 @@
     border-radius: 2rem;
     background-color: #d6a19342;
     &--p {
+      font-family: 'Asap', sans-serif;
       text-align: center;
       font-size: 1.5rem;
       padding: 1rem;
     }
   }
   &__ig{
+    font-family: 'Dancing Script', cursive;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
